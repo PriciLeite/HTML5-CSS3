@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Testando Formulário...</title>
+    <meta name="descrption" content="Criação de Formulário HTML">
+    <meta http-equiv="Content-Type">
+</head>
+
+<body>
+    <h1>Formulário para dados pessoais</h1>
+    <form action="DadosPessoais.php" method="post"> <!--Método Post: Encapsuladas e enviadas pelo HTTP post-->
+        <fieldset> <!--Agrupa o formulário criando uma borda em torno-->
+            <legend>Informações do Usúario</legend>
+            <table cellspacing="8"> <!-- Tabela-->
+                <tr> <!--Linha-->
+                    <td> <!--Conteudo-->
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label>Data de Nascimento:</label>
+                    </td>
+                    <td align="left">
+                        <input type="text" name="dia" size="2" value="dd"> /
+                        <input type="text" name="mes" size="2" value="mm"> /
+                        <input type="text" name="ano" size="4" value="aaaa">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Reg">Região:</label>
+                    </td>
+                    <td align="left">
+                        <select name="Reg">
+                            <option value="N">Norte</option>
+                            <option value="NE">Nordeste</option>
+                            <option value="CO">Centro Oeste</option>
+                            <option value="SE">Sudeste</option>
+                            <option value="S">Sul</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="senha">Senha:</label>
+                    </td>
+                    <td align="left">
+                        <input type="password" name="senha">
+                    </td>
+                </tr>
+            </table>
+            <input type="submit" value="Enviar">
+            <!--Actio receberar os dados para processar / Subit: Irá submeter os dados para o SCRIPT assim que pressionado o botão-->
+            <input type="reset" value="Limpar Formulário">
+        </fieldset>
+    </form>
+</body>
+
+</html>
