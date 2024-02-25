@@ -14,7 +14,7 @@
             <legend>Informações do Usúario</legend>
             <table cellspacing="8"> <!-- Tabela-->
                 <tr> <!--Linha-->
-                    <td> <!--Conteudo-->
+                    <td> <!--Conteúdo-->
                         <label for="nome">Nome:</label>
                         <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
                     </td>
@@ -25,9 +25,9 @@
                         <label>Data de Nascimento:</label>
                     </td>
                     <td align="left">
-                        <input type="text" name="dia" size="2" value="dd"> /
-                        <input type="text" name="mes" size="2" value="mm"> /
-                        <input type="text" name="ano" size="4" value="aaaa">
+                        <input type="text" name="dia" size="2" maxlength="2" value="dd">
+                        <input type="text" name="mes" size="2" maxlength="2" value="mm">
+                        <input type="text" name="ano" size="4" maxlength="4" value="aaaa">
                     </td>
                 </tr>
                 <tr>
